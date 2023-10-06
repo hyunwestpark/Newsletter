@@ -6,7 +6,7 @@ const request = require("request");
 const https = require("https");
 
 const app = express();
-const apiKey = "521600cc253f0f98a7e63dec4772f9a3-us21";
+const apiKey = "";
 const listId = "";
 
 app.use(express.static("public"));
@@ -36,10 +36,10 @@ app.post("/", function (req, res) {
 
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us21.api.mailchimp.com/3.0/lists/380fa31975";
+  const url = "";
   const options = {
     method: "POST",
-    auth: "Sean1:521600cc253f0f98a7e63dec4772f9a3-us21",
+    auth: "",
   };
 
   const request = https.request(url, options, function (response) {
